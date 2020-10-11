@@ -1,0 +1,202 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	font-size: 14px;
+	line-height: 1;
+	font-family: Gilroy;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+}
+/* -------------- */
+body {
+	background-color: #347e7e;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 30px 10px;
+	text-align: center;
+	margin-top: 300px;
+	background-color: #02b872;
+}
+.title {
+	font-size: 25px;
+	line-height: 32px;
+	color: #fff;
+	margin: 0px 0px 30px 0px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.form__item {
+	margin: 0px 0px 30px 0px;
+}
+.input {
+	width: 100%;
+	height: 50px;
+	border-radius: 30px;
+	padding: 0px 20px;
+}
+.input:focus {
+	box-shadow: 0px 0px 2px 2px #000, inset 0px 0px 2px 2px #000;
+	background-color: #d7fdfd;
+}
+.input:hover {
+	background-color: #d7fdfd;
+}
+
+label {
+	color: #fff;
+	margin: 0px 0px 10px 0px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+}
+.form__select {
+	position: relative;
+	height: 50px;
+	width: 200px;
+	background-color: #d7fd6e;
+	color: #fd6ed9;
+	font-size: 30px;
+	border-radius: 30px;
+	border: 5px solid #0fc0fc;
+	padding: 0px 10px;
+}
+
+.form__select option {
+	background-color: #42fc0f;
+	color: #000;
+}
+.form__item {
+	position: relative;
+}
+.file__label {
+	background-color: #fdd639;
+	line-height: 50px;
+	border-radius: 20px;
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+}
+.file__input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+.btn {
+	margin: 0px 0px 20px 0px;
+}
+textarea.input {
+	resize: none;
+}
+.auto__input {
+	display: none;
+}
+.auto__label {
+	position: relative;
+	padding: 0px 0px 0px 40px;
+}
+.auto__label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: -50%;
+	left: 0;
+	background-color: transparent;
+	border: 1px solid;
+}
+.auto__label::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	top: -10px;
+	left: 13px;
+	background-color: transparent;
+}
+.auto__input:checked + .auto__label::after {
+	background: url(../img/Vector.svg) no-repeat;
+}

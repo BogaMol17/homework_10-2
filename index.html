@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Урок№10</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<form enctype="multipart/form-data" action="#" class="form">
+				<h1 class="title">Обратная связь</h1>
+				<div class="form__item">
+					<label for="username">Имя</label>
+					<input tabindex="2" id="username" name="form[]" type="text" class="input">
+				</div>
+				<div class="form__item">
+					<label for="usersurname">Фамилия</label>
+					<input tabindex="1" id="usersurname" name="form[]" type="text" class="input">
+				</div>
+				<div class="form__item">
+					<label for="userage">Возраст</label>
+					<input tabindex="3" id="userage" name="form[]" type="number" class="input">
+				</div>
+				<div class="form__item">
+					<label for="usermail">Email</label>
+					<input tabindex="5" id="usermail" name="form[]" type="email" class="input">
+				</div>
+				<div class="form__item">
+					<label for="massagelabel">Сообщение</label>
+					<textarea tabindex="4" id="massagelabel" class="input" name="massage"></textarea>
+				</div>
+				<div class="form__item">
+					<div class="file__label">Выбрать файл</div>
+					<input class="file__input" multiple accept=".jpg, .png" name="form[]" type="file">
+				</div>
+
+				<div class="form__item">
+					<select name="form[]" class="form__select">
+						<option value="1">маракуйя</option>
+						<option value="2">манго</option>
+						<option value="3">папайя</option>
+						<option selected value="4">ананас</option>
+						<option value="5">киви</option>
+					</select>
+				</div>
+				<div class="form__item">
+					<button class="input btn" type="submit">Отправить</button>
+					<button class="input" type="reset">Очистить</button>
+				</div>
+				<div class="form__item">
+					<div class="title">technique</div>
+					<input class="auto__input" id="radiotechnique" name="auto" type="radio">
+					<label class="auto__label" value="bike" for="radiotechnique">Bike</label>
+					<input class="auto__input" id="radiotechniq" name="auto" type="radio">
+					<label class="auto__label" value="car" for="radiotechniq">Car</label>
+					<input checked class="auto__input" id="radiotechniqu" name="auto" type="radio">
+					<label class="auto__label" value="bus" for="radiotechniqu">Bus</label>
+				</div>
+			</form>
+		</div>
+</body>
+
+</html>
